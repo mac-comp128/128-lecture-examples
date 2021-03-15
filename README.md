@@ -1,3 +1,3 @@
-# Project Title Goes Here
+# Comp 128 Lecture Examples
 
-Info about your project goes here
+This repository contains code and examples from lecture.

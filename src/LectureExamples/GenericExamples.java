@@ -2,6 +2,12 @@ package LectureExamples;
 
 public class GenericExamples {
     public static void main(String[] args){
+        char[] chars = {'a','b','c'};
+        String str = new String(chars);
+        System.out.print(str);
+
+
+
         // instance of Integer type
         Test <Integer> intObjects = new Test<Integer>(15);
         System.out.println(intObjects.getObject());

@@ -40,6 +40,14 @@ public class BigOExamples {
             }
         }
     }
+    
+    // O(logn)
+    public void count(int n){
+        int count = 1;
+        while (count < n){
+            count *=2;
+        }
+    }
 
     // O(nlogn)
     public void test(int[] array) {
@@ -63,4 +71,35 @@ public class BigOExamples {
             swap(array, top, smallestIndex);
         }
     }
+
+    // empty loop example
+    public void sum3(int n) {
+        int sum = 0;
+        for (int j = 0; j < n; j++){
+            //sum += j;
+        } 
+    }
+
+
+   // recusion example, and iterative example comparison 
+   // Fibonacci numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+   // O(n) 
+   public int iterativeFib(int n) {
+        int fib = 0;
+        int a = 1;
+        for(int i=0; i<n; i++) {
+            fib = fib + a;
+            a = fib;
+        }
+        return fib;
+    }
+
+    // O(2^n)
+    public int recursiveFib(int n){
+    if (n <= 1)
+       return n;
+    return recursiveFib(n-1) + recursiveFib(n-2);
+    }
+
+    
 }

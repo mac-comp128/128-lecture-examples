@@ -4,27 +4,27 @@ import java.util.*;
 
 public class ComparableExample {
     public static void main(String[] args) {
-        SingleWordCounter the = new SingleWordCounter("the", 0);
-        SingleWordCounter bret = new SingleWordCounter("bret", 0);
+        SingleWordCounter to = new SingleWordCounter("to", 0);
+        SingleWordCounter cold = new SingleWordCounter("cold", 0);
 
-        String words = "Bret the quick brown fox jumped over the lazy dog";
+        String words = "Too wet to go out and too cold to play ball";
         Scanner scan = new Scanner (words);
 
         while  (scan.hasNext())
         {
             String word = scan.next();
-            if (word.equals(the.getWord())){
-                the.incCount();
+            if (word.equals(to.getWord())){
+                to.incCount();
             }
-            else if (word.equals(bret.getWord())) {
-                bret.incCount();
+            else if (word.equals(cold.getWord())) {
+                cold.incCount();
             }
         }
         scan.close();
 
         SingleWordCounter[] wordCounts = new SingleWordCounter[2];
-        wordCounts[0] = the;
-        wordCounts[1] = bret;
+        wordCounts[0] = to;
+        wordCounts[1] = cold;
 
         Arrays.sort(wordCounts); // calls compareTo multiple times on each counter internally to actually do the sorting
 

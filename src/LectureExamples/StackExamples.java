@@ -10,6 +10,7 @@ public class StackExamples {
         
         // Initializing a stack in Java using deque class with arraydeque implementation
         Deque<String> stackOfStrings = new ArrayDeque<String>();
+        
         // Initializing a stack in Java using deque class with linked list implementation
         //Deque<String> stackOfStrings = new LinkedList<String>();
 
@@ -17,6 +18,7 @@ public class StackExamples {
         stackOfStrings.push("apple");
 
         // Take a look at the top of the stack using peek method
+        System.out.println(" ");
         System.out.println("The current top element is: "+stackOfStrings.peek());
 
         // Push two more elements to the top of the stack
@@ -30,6 +32,8 @@ public class StackExamples {
         // An example of iterating through a stack
         while(!stackOfStrings.isEmpty()){
             System.out.println("Element popped: "+stackOfStrings.pop());
+
+            // What to do if all elements are popped from a stack?
         }
 
         // Check the size of the stack after popping all elements

@@ -22,7 +22,6 @@ public class SingleWordCounter implements Comparable<SingleWordCounter> {
     }
 
     public int compareTo(SingleWordCounter other){
-        /*
         if (this.count < other.count){
             return -1;
         }
@@ -32,12 +31,11 @@ public class SingleWordCounter implements Comparable<SingleWordCounter> {
         else{
             return this.word.compareTo(other.word);
         }
-        */
-        if (this.count != other.count){
-            return this.count - other.count;
-        }
-        else {
-            return this.word.compareTo(other.word);
-        }
+        // if (this.count != other.count){
+        //     return this.count - other.count;
+        // }
+        // else {
+        //     return this.word.compareTo(other.word);
+        // }
     }
 }

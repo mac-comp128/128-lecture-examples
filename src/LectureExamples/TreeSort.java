@@ -53,11 +53,11 @@ public class TreeSort {
     }
      
     /* Implement inorder traversal, to return values in sorted order */
-    public void inorderTraverse(Node root){
+    public void printInorder(Node root){
         if (root != null){
-            inorderTraverse(root.left);
+            printInorder(root.left);
             System.out.print(root.key + " ");
-            inorderTraverse(root.right);
+            printInorder(root.right);
         }
         else {
             return;
@@ -76,7 +76,7 @@ public class TreeSort {
         TreeSort bst = new TreeSort();
         int arr[] = {50, 30, 70, 15, 7, 62, 22, 35, 87, 22, 31};
         bst.arrayToTree(arr);
-        bst.inorderTraverse(bst.root);
+        bst.printInorder(bst.root);
     }
 }
 

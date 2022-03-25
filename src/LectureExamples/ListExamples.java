@@ -1,8 +1,13 @@
+package LectureExamples;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class ListExamples {
     public static void main(String[] args){
         // make some new student instances
-        Student sam = new Student("Gilbert", "Sam", 2220390);  Student john = new Student("Smith", "John", 333333);
-        Student libby = new Student("Shoop", "Libby", 4444444);
+        Student sam = new Student("Sam", 2220390);  Student john = new Student("John", 333333);
+        Student libby = new Student("Libby", 4444444);
 
         List<Student> studentList = new ArrayList<Student>();  
 

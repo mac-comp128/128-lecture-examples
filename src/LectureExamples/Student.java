@@ -1,3 +1,5 @@
+package LectureExamples;
+
 public class Student {
     /* Private instance variables */
     private String studentName;   /* The student's name           */

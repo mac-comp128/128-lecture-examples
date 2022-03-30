@@ -32,6 +32,8 @@ public class BinarySearchTree {
 		1) return the base case when the node is null or if it is a leaf node
 		2) otherwise call the method on its child nodes and return result plus 1 
 	
+	Upating the height of x and pivot is also an example of this pattern in AVL tree activity
+		
 	*/
 	public int height(TreeNode root) {
 		/* Base case, if the node is null, return -1 (given root start at level 0) */
@@ -41,6 +43,7 @@ public class BinarySearchTree {
 		/* Otherwise, we run the method on its child nodes - get subtree height on its left child and right child */
 		int leftTreeHeight = height(root.left);
 		int rightTreeHeight = height(root.right);
+
 		/* Take the larger height and increment by 1 */
 		return Math.max(leftTreeHeight, rightTreeHeight) + 1;
 	}
@@ -60,6 +63,8 @@ public class BinarySearchTree {
 		1) Handle the base case when the tree/local root is emoty (often returns null)
 		2) Handel the base case if local root has the property we are searching for
 		3) Otherwise, call the method on its left subtree and right subtree
+
+	FindCloset is also an example of this pattern from BinarySearchTree activity
 	
 	*/
 	private TreeNode deleteRecursive(TreeNode root, int key){
@@ -177,7 +182,7 @@ public class BinarySearchTree {
 		System.out.println("Current height:");
 		System.out.println(tree.height(tree.root));
 
-		System.out.println("\n\nInorder traversal of the given tree");
+		System.out.println("\nInorder traversal of the given tree");
 		tree.inorder();
 	
 
